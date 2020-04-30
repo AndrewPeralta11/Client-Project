@@ -1,8 +1,8 @@
-# Project Name
+# Project Name: Music Board
 
-## Team Members
+## Team Members: Andrew, George
 
-## Problem
+## Problem: You just can't figure out what to do 
 
 ## Opportunity
 
