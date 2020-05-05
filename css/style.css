@@ -4,11 +4,17 @@ body {
 }
 
 h1 {
-  
+  align: center;
 }
 
 .container {
-  display: flex;
+  text-align: center;
   border: solid 5px #4357AD;
   background: #48A9A6;
+  margin: 5px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
 }
