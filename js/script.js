@@ -1,4 +1,5 @@
 /* global $ */
 $("#genre").click(function() {
-  let userInput = $()                
+  let userInput = $("input").val();
+  
 });
