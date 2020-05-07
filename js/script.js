@@ -20,6 +20,10 @@ $("#genre").click(function() {
   searchGenre();
 });
 
-let keypress = 
+// https://stackoverflow.com/a/12518467
+$("input").keypress(function(key) {
+  if(key.which === 13) {
+    searchGenre();
+} else {}
+});
 
-if()
