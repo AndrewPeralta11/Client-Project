@@ -18,3 +18,8 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+
+#grid {
+  display: grid;
+  grid-template-columns: auto auto auto; 
+}

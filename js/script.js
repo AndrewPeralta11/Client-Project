@@ -10,7 +10,7 @@ $("#genre").click(function() {
     // info = [ ... ]
     console.log(info);
     info.forEach(function(song) {
-      $("")
+      $("#grid").append(`<h3> ${song.title} </h3> <h3> ${song.genre} </h3> <h3> <a href = ${song.permalink_url}> Listen </a> </h3>`);
     })
   })
 });
