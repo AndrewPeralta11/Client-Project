@@ -7,6 +7,15 @@ h1 {
   align: center;
 }
 
+button {
+  margin: 10px 0px 10px 0px;
+}
+
+input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .container {
   text-align: center;
   border: solid 5px #4357AD;
@@ -16,7 +25,7 @@ h1 {
 
 #navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 #grid {

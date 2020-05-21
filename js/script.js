@@ -1,4 +1,6 @@
 /* global $ */
+playlist-song
+
 function searchGenre() {
   $("#grid").empty();
   let userInput = $("input").val();
