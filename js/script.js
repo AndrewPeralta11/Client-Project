@@ -1,5 +1,6 @@
 /* global $ */
 let playlist_songs = [];
+let all_songs = [];
 
 function searchGenre() {
   $("#grid").empty();
@@ -13,6 +14,12 @@ function searchGenre() {
     // info = [ ... ]
     console.log(info);
     info.forEach(function(song) {
+      let Song_Info = {
+        title:song.title,
+        genre:song.genre,
+        link:song.permalink_url
+      }
+      all_songs.push(Song_Info);
       $("#grid").append(`<h3> ${song.title} </h3> <h3> ${song.genre} </h3> <h3> <a href = ${song.permalink_url} target = "_blank" > Listen </a> </h3> <button class='playlist' > Add to Playlist </button`);
     })
   })
@@ -20,6 +27,7 @@ function searchGenre() {
 
 $("#genre").click(function() {
   searchGenre();
+  console.log(all_songs);
 });
 
 $("input").keypress(function(key) {
