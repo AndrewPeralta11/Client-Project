@@ -20,13 +20,15 @@ function searchGenre() {
         link:song.permalink_url
       }
       all_songs.push(Song_Info);
-      $("#grid").append(`<h3> ${song.title} </h3> <h3> ${song.genre} </h3> <h3> <a href = ${song.permalink_url} target = "_blank" > Listen </a> </h3> <button class = "playlist" id = ${song.title} > Add to Playlist </button>`);
+      $("#grid").append(`<h3> ${song.title} </h3> <h3> ${song.genre} </h3> <h3> <a href = ${song.permalink_url} target = "_blank" > Listen </a> </h3> <button class = "playlist" id = "${song.title}" > Add to Playlist </button>`);
+      $(`#${song.title}`).click(function(event) {
+        console.log(event.target.id);
+      });
     })
-    $(".playlist").click(function(event) {
-      console.log(event.target.id);
-    });
   })
 }
+
+
 
 $("#genre").click(function() {
   searchGenre();
